@@ -20,6 +20,13 @@
 
                     </div>
                     <button
+                        onclick="$('.mdui-fab').click()"
+                        data-clipboard-target="#link"
+                        style="margin-left: 15px;"
+                        class="clipboard mdui-btn mdui-btn-raised mdui-btn-dense mdui-ripple mdui-color-blue mdui-text-color-white-text mdui-float-right">
+                        <i class="mdui-icon material-icons">file_download</i> 下载
+                    </button>
+                    <button
                         data-clipboard-target="#link"
                         class="clipboard mdui-btn mdui-btn-raised mdui-btn-dense mdui-ripple mdui-color-theme-accent mdui-float-right">
                         <i class="mdui-icon material-icons">content_copy</i> 复制
@@ -29,7 +36,7 @@
             </div>
         </div>
     </div>
-    <a href="{{ shorten_url(route('drive.query', ['hash' => $hash, 'query' => url_encode(implode('/', $path)),'download' => 1])) }}"
+    <a style="display: none;" href="{{ shorten_url(route('drive.query', ['hash' => $hash, 'query' => url_encode(implode('/', $path)),'download' => 1])) }}"
        class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"
     ><i class="mdui-icon material-icons">file_download</i></a>
 @stop
