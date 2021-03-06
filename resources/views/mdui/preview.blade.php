@@ -20,10 +20,9 @@
 
                     </div>
                     <button
-                        onclick="$('.mdui-fab').click()"
-                        data-clipboard-target="#link"
+                        onclick="$('.mdui-fab')[0].click()"
                         style="margin-left: 15px;"
-                        class="clipboard mdui-btn mdui-btn-raised mdui-btn-dense mdui-ripple mdui-color-blue mdui-text-color-white-text mdui-float-right">
+                        class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-ripple mdui-color-blue mdui-text-color-white-text mdui-float-right">
                         <i class="mdui-icon material-icons">file_download</i> 下载
                     </button>
                     <button
