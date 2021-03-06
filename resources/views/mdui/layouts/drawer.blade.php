@@ -35,8 +35,13 @@
             @endforeach
         @endif
         <div class="mdui-divider"></div>
+        <a href="/admin"
+           class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">settings</i>
+            <div class="mdui-list-item-content">管理面板</div>
+        </a>
         <a href="https://github.com/wangningkai/OLAINDEX"
-           class="mdui-list-item mdui-ripple mdui-hidden-sm-up">
+           class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
             <div class="mdui-list-item-content">Github</div>
         </a>
