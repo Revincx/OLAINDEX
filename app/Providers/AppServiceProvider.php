@@ -29,5 +29,9 @@ class AppServiceProvider extends ServiceProvider
         if (file_exists($sqlFile) || env('DB_CONNECTION') === 'mysql') {
             Schema::defaultStringLength(191);
         }
+
+        if(config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
     }
 }
